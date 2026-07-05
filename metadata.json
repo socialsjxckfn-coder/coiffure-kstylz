@@ -1,0 +1,6 @@
+{
+  "name": "Coiffure K.Stylz",
+  "description": "Premium barber shop in Montréal offering precision cuts, classic grooming, and modern style.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
