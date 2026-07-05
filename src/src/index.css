@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Georgia", "Times New Roman", serif;
+  --color-gold: #D4AF37;
+  --color-gold-hover: #C5A030;
+  --color-charcoal: #1A1A1A;
+  --color-border: #2A2A2A;
+  --color-black-bg: #121212;
+  --color-barber-red: #D12F2F;
+}
+
+body {
+  background-color: var(--color-black-bg);
+  color: white;
+  overflow-x: hidden;
+  font-family: var(--font-sans);
+}
+
+/* Barber pole gradient from theme */
+.barber-pole {
+  background: repeating-linear-gradient(45deg, var(--color-barber-red), var(--color-barber-red) 10px, #ffffff 10px, #ffffff 20px, #2563eb 20px, #2563eb 30px, #ffffff 30px, #ffffff 40px);
+}
+
+.hero-mask {
+  background: linear-gradient(rgba(18,18,18,0.8), rgba(18,18,18,0.8)), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=1024');
+  background-size: cover;
+  background-position: center;
+}
+
+.surface {
+  background-color: var(--color-charcoal);
+  border: 1px solid var(--color-border);
+}
+
+.glass {
+  background: rgba(26, 26, 26, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+/* Hide scrollbar for clean aesthetics */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
